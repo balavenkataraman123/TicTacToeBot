@@ -144,7 +144,7 @@ def minimax(board):
 
     if terminal(board):
         return utility(board)
-    elif len(actions(board)) > 7:
+    elif len(actions(board)) > 8:
         return(random.choice(actions(board)))
     elif player(board) == "X":
         maxv = maxvalue(board)
